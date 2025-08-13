@@ -29,6 +29,7 @@
   <modules>
     <module>core</module>
     <module>dev</module>
+    <module>dev-test</module>
     <module>maven_plugin</module>
     <module>contrib/langchain4j</module>
   </modules>
@@ -181,13 +182,13 @@
         </plugin>
         <plugin>
           <groupId>org.sonatype.central</groupId>
-            <artifactId>central-publishing-maven-plugin</artifactId>
-            <version>0.8.0</version>
-            <extensions>true</extensions>
-            <configuration>
-              <publishingServerId>central</publishingServerId>
-            </configuration>
-          </plugin>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.8.0</version>
+          <extensions>true</extensions>
+          <configuration>
+            <publishingServerId>central</publishingServerId>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
